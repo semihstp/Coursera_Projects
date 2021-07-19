@@ -4,7 +4,7 @@ Bu proje Coursea'nın [Detecting COVID-19 with Chest X-Ray using PyTorch](https:
 
 # Dataset
 
-Kaggle platformundaki [COVID-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) veri seti kullanılmıştır. 'Normal', 'Covid' ve 'Viral Pneumonia' olmak üzere 3 sınıfa sahiptir. 3616 COVID, 10192 normal ve 1345 Viral Pneumonia röntgenlerinden oluşan veri seti Kaggle üzerinden sürekli güncellenmekle birlikte dördüncü bir sınıf olarak akciğer kanseri de eklenmiştir. Ancak gerçekleştirilen çalışmada sadece üç sınıfa yer verilmiştir.
+Kaggle platformundaki [COVID-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) veri seti kullanılmıştır. 'Normal', 'Covid' ve 'Viral Pneumonia' olmak üzere 3 sınıfa sahiptir. 3616 COVID, 10192 normal ve 1345 Viral Pneumonia röntgenlerinden oluşan veri seti Kaggle üzerinden sürekli güncellenmekle birlikte dördüncü bir sınıf olarak akciğer kanseri de eklenmiştir. Ancak gerçekleştirilen çalışmada sadece üç sınıfa yer verilmiştir. Çekilen veri seti train, test ve validation olmak üzere üç gruba ayrılmıştır.
 
 ## Model
 Çalışmada PyTorch kütüphanesi kullanılmıştır. Backbone olarak Resnet18 mimarisi alınmıştır. Bazı önemli parametreler:
@@ -18,12 +18,16 @@ Kaggle platformundaki [COVID-19 Radiography Database](https://www.kaggle.com/taw
 Eğitimin ilk aşamalarında elde edilen sonuçlar :
 
 * Evaluating at step 20:
+
 ![step_20](https://user-images.githubusercontent.com/56072259/126179726-1512f6dc-2eaf-4d16-ae08-0e1246f344de.png)
 
 ```Validation Loss: 0.9850, Accuracy: 0.5444```
 
 * Evaluating at step 200 (acc>95'e geldiği an eğitim sonlandırılmıştı.) :
+ 
 ![step_20](https://user-images.githubusercontent.com/56072259/126179715-c5789584-15c0-4fb8-be4b-6de9c970030b.png)
+
+```Validation Loss: 0.1749, Accuracy: 0.9778```
 
 ## Benimle iletişime geçin!
 [![](https://user-images.githubusercontent.com/56072259/121079707-28be5d00-c7e3-11eb-9666-9acb3dd9526a.png)](https://www.linkedin.com/in/semih-gulum/)
