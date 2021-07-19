@@ -13,8 +13,6 @@ Kaggle platformundaki [COVID-19 Radiography Database](https://www.kaggle.com/taw
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | (244, 244) | 6 | 1 | 512 | 3 | 3e-5 |
 
-Image size (244, 244)'e düşürülmüştür. Bunun yanı sıra batch_size değeri 6 olarak alınmıştır. epoch 1
-
 ## Örnek Çıktılar
 
 Eğitimin ilk aşamalarında elde edilen sonuçlar :
